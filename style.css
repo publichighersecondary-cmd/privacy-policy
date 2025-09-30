@@ -1,0 +1,131 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f4f9; /* Light grey background for a soft look */
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.head{
+    display: flex;
+    gap:5rem;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #1E237E; /* Dark Blue from logo */
+}
+
+.logo {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #1E237E; /* Dark Blue from logo */
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px 0;
+}
+
+.policy-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.effective-date {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.policy-card h2 {
+    color: #1E237E; /* Dark Blue from logo */
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.policy-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.policy-card ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.policy-card ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #278030; /* Green from logo */
+    font-weight: bold;
+}
+
+.contact-info li::before {
+    content: '→';
+    color: #E94E1B; /* Red/Orange from logo */
+}
+
+a {
+    color: #278030; /* Green from logo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1E237E; /* Dark Blue on hover */
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1E237E; /* Dark Blue from logo */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .policy-card {
+        padding: 25px;
+    }
+
+    .policy-card h2 {
+        font-size: 1.5rem;
+    }
+}
